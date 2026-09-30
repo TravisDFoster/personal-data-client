@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Data Client</title>
+<style>
+  :root {
+    --bg: #fbfaf8; --fg: #1a1a1a; --muted: #5c5c5c;
+    --rule: #e3e0da; --accent: #2b5c4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14161a; --fg: #e8e6e3; --muted: #9a9894;
+            --rule: #2c2f36; --accent: #7fc2ae; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 20px;
+  }
+  main { max-width: 640px; margin: 0 auto; padding-block: 64px 80px; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0 0 40px; }
+  h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em;
+       color: var(--accent); margin: 40px 0 10px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  footer { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 16px;
+           color: var(--muted); font-size: 0.875rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Personal Data Client</h1>
+  <p class="sub">A single-user command-line tool for reading my own Google data.</p>
+
+  <h2>What it is</h2>
+  <p>
+    This is a personal command-line application. It uses the Google APIs to read data
+    from <strong>one Google Account — my own</strong> — and write it to files on my own
+    computers. It has no other users, no server, no website that stores anything, and
+    no sign-up.
+  </p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Reads my Google Drive, Gmail, Calendar and Docs to organise my own notes and schedule.</li>
+    <li>Reads my Google Health data — sleep, resting heart rate and heart-rate variability
+        recorded by my watch — and turns it into a small daily summary I use to plan training.</li>
+    <li>Saves the results as plain files in a private repository on my own machines.</li>
+  </ul>
+
+  <h2>Why it needs OAuth</h2>
+  <p>
+    Google requires a registered application to access an account's data, even when the
+    developer and the user are the same person. That is the only reason this app exists
+    as a registered OAuth client. Access is granted by me, to me.
+  </p>
+
+  <h2>Privacy</h2>
+  <p>
+    The app collects nothing from anyone else and shares nothing with anyone.
+    Full detail: <a href="privacy.html">Privacy Policy</a>.
+  </p>
+
+  <footer>
+    Maintained by Travis Foster ·
+    <a href="https://github.com/TravisDFoster">github.com/TravisDFoster</a>
+  </footer>
+</main>
+</body>
+</html>

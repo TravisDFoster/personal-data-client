@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Personal Data Client</title>
+<style>
+  :root {
+    --bg: #fbfaf8; --fg: #1a1a1a; --muted: #5c5c5c;
+    --rule: #e3e0da; --accent: #2b5c4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14161a; --fg: #e8e6e3; --muted: #9a9894;
+            --rule: #2c2f36; --accent: #7fc2ae; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 20px;
+  }
+  main { max-width: 640px; margin: 0 auto; padding-block: 64px 80px; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0 0 40px; }
+  h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em;
+       color: var(--accent); margin: 36px 0 10px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  footer { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 16px;
+           color: var(--muted); font-size: 0.875rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="sub">Personal Data Client · last updated 30 September 2026</p>
+
+  <h2>Summary</h2>
+  <p>
+    This application is used by one person — its developer, Travis Foster — to read his
+    own Google Account data onto his own computers. It has no other users. It does not
+    collect, transmit, sell, or share anyone's data with anyone.
+  </p>
+
+  <h2>What data is accessed</h2>
+  <p>With the account holder's explicit OAuth consent, the app may read:</p>
+  <ul>
+    <li><strong>Google Drive, Docs and Sheets</strong> — files the account owner created.</li>
+    <li><strong>Gmail</strong> — messages, to sort and summarise the owner's own inbox.</li>
+    <li><strong>Google Calendar</strong> — events and free/busy information.</li>
+    <li><strong>Google Health</strong> — sleep, resting heart rate, heart-rate variability
+        and related fitness measurements recorded by the owner's own devices.</li>
+  </ul>
+
+  <h2>How it is used</h2>
+  <p>
+    Data is used only to produce summaries for the account owner's personal use — for
+    example, turning nightly sleep and heart-rate-variability readings into a short daily
+    record used to plan exercise. No automated decisions are made about any other person,
+    and nothing is used for advertising, profiling, or analytics.
+  </p>
+
+  <h2>How it is stored</h2>
+  <p>
+    Results are written to files on the owner's own computers and to a private source
+    repository that only the owner can access. OAuth tokens are held in the operating
+    system's credential store (Windows Credential Manager or macOS Keychain) on those
+    machines. No data is stored on any server operated by this application, because there
+    is no such server.
+  </p>
+
+  <h2>Sharing</h2>
+  <p>
+    Data is never sold, rented, or shared with third parties. It is not transferred to any
+    third-party service beyond the Google APIs the data is read from.
+  </p>
+
+  <h2>Google user data and limited use</h2>
+  <p>
+    This application's use of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+    including the Limited Use requirements.
+  </p>
+
+  <h2>Retention and deletion</h2>
+  <p>
+    Files are kept for as long as they are useful to the owner and can be deleted at any
+    time. Access can be revoked at any moment from the account's
+    <a href="https://myaccount.google.com/permissions">Google Account permissions page</a>,
+    which immediately ends the app's ability to read any data.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions can be directed to the maintainer via
+    <a href="https://github.com/TravisDFoster">github.com/TravisDFoster</a>.
+  </p>
+
+  <footer>
+    <a href="index.html">← Back to Personal Data Client</a>
+  </footer>
+</main>
+</body>
+</html>
